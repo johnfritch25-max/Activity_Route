@@ -1,0 +1,3 @@
+<!-- filepath: c:\Users\Admin\activityRouting\views\users\profile.xian -->
+<h1>{{title}}</h1>
+<p>User ID: {{userId}}</p>
