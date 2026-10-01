@@ -6,7 +6,7 @@ export const getUserById = (req, res) => {
   const userId = req.params.id;
 
   res.render("users/profile", {
-    title: "Output ni Garcia",
+    title: "Title lang",
     userId
   });
 };
