@@ -25,21 +25,25 @@
     
 import express from "express";
 import { homePage } from "../controllers/homeController.js";
+import { aboutPage } from "../controllers/aboutController.js";
 
 import authRoutes from "./authRoutes.js";
 import userRoutes from "./userRoutes.js";
 import productRoutes from "./productRoutes.js";
 import orderRoutes from "./orderRoutes.js";
 import apiRoutes from "./apiRoutes.js";
+import aboutRoutes from "./aboutRoutes.js";
 
 const router = express.Router();
 
 router.get("/", homePage);
+router.get("/about", aboutPage);
 
 router.use("/auth", authRoutes);
 router.use("/products", productRoutes);
 router.use("/orders", orderRoutes);
 router.use("/api", apiRoutes);
 router.use("/users", userRoutes);
+router.use("/about", aboutRoutes);
 
 export default router;
